@@ -1,0 +1,13 @@
+package VisitorPattern;
+
+public interface IVisitor {
+
+	void open(Class aClass);
+	void open(CompilationUnit compilationUnit);
+	void open(Method aMethod);
+	void close(Class aClass);
+	void close(CompilationUnit compilationUnit);
+	void close(Method aMethod);
+	void visit(Field aField);
+	void visit(Statement aStatement);
+}

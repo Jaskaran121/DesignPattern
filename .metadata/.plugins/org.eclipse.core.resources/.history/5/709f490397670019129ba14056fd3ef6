@@ -1,0 +1,24 @@
+package ImplAbstractFactoryPattern;
+
+import java.util.List;
+
+import IAbstractFactoryPattern.ISort;
+
+public class FactoryClass {
+
+	public <E> ISort<E> getInstanceInsertionSort()
+	{
+		return new InsertionSort();
+	}
+}
+
+class InsertionSort<E> implements ISort<E>
+{
+
+	@Override
+	public List<E> InsertionSort(List<E> aList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

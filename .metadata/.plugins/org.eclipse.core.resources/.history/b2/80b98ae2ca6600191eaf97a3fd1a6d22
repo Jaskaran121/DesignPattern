@@ -1,0 +1,4 @@
+
+public class VisitorA implements IVisitor{
+
+}

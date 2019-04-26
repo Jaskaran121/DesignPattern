@@ -1,0 +1,10 @@
+
+public class VisitorA implements IVisitor{
+
+	@Override
+	public void visit(IDefaultClass defaultClass) {
+		// TODO Auto-generated method stub
+		System.out.println("Applying visitor algorithm to class "+ defaultClass.toString());
+	}
+
+}

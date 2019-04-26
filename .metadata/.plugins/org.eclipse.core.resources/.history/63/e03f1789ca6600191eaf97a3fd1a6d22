@@ -1,0 +1,4 @@
+
+public class DefaultClassA implements IDefaultClass{
+
+}

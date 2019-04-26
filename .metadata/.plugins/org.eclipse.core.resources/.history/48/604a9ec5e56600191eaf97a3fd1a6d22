@@ -1,0 +1,11 @@
+package VisitorPattern;
+
+public class clientClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CompilationUnit object = new CompilationUnit();
+		object.accept(ConcreteVisitorA);
+	}
+
+}

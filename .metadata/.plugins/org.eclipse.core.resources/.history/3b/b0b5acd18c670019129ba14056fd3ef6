@@ -1,0 +1,18 @@
+package VisitorPattern;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
+public class clientClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		CompilationUnit object = new CompilationUnit();
+//		object.accept(new ConcreteVisitorA());
+		
+		ArrayList<Integer> myList = new ArrayList<>(Arrays.asList(6,1,2,8,4));
+		ArrayList<Integer> sortedList = myList.stream().sorted().collect(Collectors.toList());
+	}
+
+}

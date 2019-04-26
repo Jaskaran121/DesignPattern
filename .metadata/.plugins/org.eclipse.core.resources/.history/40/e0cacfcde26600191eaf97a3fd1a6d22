@@ -1,0 +1,15 @@
+package VisitorPattern;
+
+import java.util.Set;
+
+public class CompilationUnit implements ICompiler{
+	
+	Set classesList;
+	classesList.add(Class);
+	@Override
+	public void accept(IVisitor visitor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

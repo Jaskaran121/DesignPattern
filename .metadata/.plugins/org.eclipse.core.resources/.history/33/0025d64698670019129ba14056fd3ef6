@@ -1,0 +1,16 @@
+package ClientAbstractFactoryPattern;
+import java.util.Arrays;
+import java.util.List;
+
+import ImplAbstractFactoryPattern.FactoryClass;
+
+public class clientClass{
+
+	public static <E> void main(String[] args) {
+		
+		List<E> sortedList = (List<E>) new FactoryClass().getInstanceInsertionSort().InsertionSort(Arrays.asList(4,1,5,2));
+		System.out.println(sortedList);
+		new InsertionSort();
+	}
+
+}

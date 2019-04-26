@@ -1,0 +1,7 @@
+package IAbstractFactoryPattern;
+
+import java.util.List;
+
+public interface ISort<E> {
+public List<E> Sort(List<E> aList);
+}

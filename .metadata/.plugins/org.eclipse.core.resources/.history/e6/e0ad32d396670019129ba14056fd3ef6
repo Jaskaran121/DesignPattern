@@ -1,0 +1,5 @@
+package ImplAbstractFactoryPattern;
+
+public class FactoryClass {
+
+}

@@ -1,0 +1,12 @@
+package ClientAbstractFactoryPattern;
+import ImplAbstractFactoryPattern.FactoryClass;
+
+public class clientClass {
+
+	public static void main(String[] args) {
+		
+		ISort<E> insertionSort = new FactoryClass().getInstanceInsertionSort();
+
+	}
+
+}

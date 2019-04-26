@@ -1,0 +1,14 @@
+package VisitorPattern;
+
+import java.util.Arrays;
+
+public class Class implements ICompiler{
+
+	List<Method> methodsList = new ArrayList<>(Arrays.asList(new Method()));
+	@Override
+	public void accept(IVisitor visitor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

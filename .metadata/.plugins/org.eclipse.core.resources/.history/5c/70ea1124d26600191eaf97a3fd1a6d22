@@ -1,0 +1,19 @@
+package VisitorPatternTutorialsPoint;
+
+public class VisitorA implements IVisitor{
+
+	@Override
+	public void visit(IDefaultClass defaultClass) {
+		// TODO Auto-generated method stub
+		if(defaultClass.getClass().equals(DefaultClass.class))
+		{
+			System.out.println("Applying visitor algorithm to Default Class A");
+		}
+		else if(defaultClass.getClass().equals(DefaultClassB.class))
+			System.out.println("Applying visitor algorithm to Default Class B");
+		else
+			System.out.println("Applying visitor algorithm to Default Class C");
+		
+	}
+
+}

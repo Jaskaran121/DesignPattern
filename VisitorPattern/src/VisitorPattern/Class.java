@@ -1,0 +1,33 @@
+package VisitorPattern;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+public class Class implements ICompiler{
+
+	List<Method> methodsList = new ArrayList<>(Arrays.asList(new Method()));
+	List<Field> fieldsList = new ArrayList<>(Arrays.asList(new Field()));
+	@Override
+	public void accept(IVisitor visitor) {
+		// TODO Auto-generated method stub
+		visitor.open(this);
+		Iterator iterator = methodsList.iterator();
+		while(iterator.hasNext())
+		{
+			Method aMethod = (Method) iterator.next();
+			aMethod.accept(visitor);
+		}
+		
+		iterator = fieldsList.iterator();
+		while(iterator.hasNext())
+		{
+			Field aField = (Field) iterator.next();
+			aField.accept(visitor);
+		}
+		
+		visitor.close(this);
+	}
+
+}

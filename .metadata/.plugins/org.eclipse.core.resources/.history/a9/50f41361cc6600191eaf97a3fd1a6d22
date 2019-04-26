@@ -1,0 +1,18 @@
+package VisitorPatternTutorialsPoint;
+import java.util.List;
+
+public class DefaultClassA implements IDefaultClass{
+	List<IDefaultClass> defaultCLassesList;
+	
+	DefaultClassA(IVisitor visitor)
+	{
+		defaultCLassesList = new ArrayList<>();
+		
+	}
+	@Override
+	public void accept(IVisitor visitor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package IAbstractFactoryPattern;
+
+public class ISort {
+
+}
